@@ -26,8 +26,8 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
   final _passController = TextEditingController();
   final _confirmPassController = TextEditingController();
 
-  final List<String> _countries = ['Russia', 'Ukraine', 'Germany', 'France'];
-  String _selectedCountry = 'Russia';
+  final List<String> _countries = ['Ukraine', 'Russia', 'Italy', 'France'];
+  String _selectedCountry = 'France';
 
   final _nameFocus = FocusNode();
   final _phoneFocus = FocusNode();
@@ -231,7 +231,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
               child: const Text('Submit Form'),
               onPressed: _submitForm,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
+                // primary: Colors.green,
                 textStyle: const TextStyle(color: Colors.white),
               ),
               //color: Colors.green,
